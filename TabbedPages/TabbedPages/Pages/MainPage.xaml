@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabbedPages.MainPage">
+
+    <StackLayout BackgroundColor="Red">
+        <Label Text="ONLINE COMPUTER STORE" TextColor="White" HorizontalOptions="Center" Margin="0,250,0,0"/>
+
+
+        <Entry x:Name="Usr_Name" BackgroundColor="White" Margin="0,0" TextColor="Black"/>
+        <Button x:Name="Add_Button" Text="Add" TextColor="White" Clicked="Add_Button_Clicked" />
+        <ScrollView IsVisible="false">
+            <ListView x:Name="Usr_List_View" Margin="200,0,0,0" HorizontalOptions="Center">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Name}"/>
+                                <Label Text="___________" TextColor="Red"/>
+                                <Label Text="{Binding ID}"/>
+
+
+                            </StackLayout>
+
+                        </ViewCell>
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+
+            </ListView>
+
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>
+

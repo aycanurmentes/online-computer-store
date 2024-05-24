@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabbedPages.StorePage"
+             Title="StorePage">
+  <StackLayout Background="Red">
+        <StackLayout Background="White" Margin="10,0,10,10">
+            <StackLayout Orientation="Horizontal">
+
+                 <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="CPU" TextColor="Black" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"/>
+                <RadioButton x:Name="RBi3" Content="Core i3" TextColor="Black" Grid.Row="1" Grid.Column="0" CheckedChanged="RBi3_CheckedChanged"/>
+                <RadioButton x:Name="RBi5" Content="Core i5" TextColor="Black" Grid.Row="2" Grid.Column="0" CheckedChanged="RBi3_CheckedChanged"/>
+                <RadioButton x:Name="RBi7" Content="Core i7" TextColor="Black" Grid.Row="3" Grid.Column="0" CheckedChanged="RBi3_CheckedChanged"/>
+                <RadioButton x:Name="RBi9" Content="Core i9" TextColor="Black" Grid.Row="4" Grid.Column="0" CheckedChanged="RBi3_CheckedChanged"/>
+
+            </Grid>
+
+             <Grid Margin="50,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Storage" TextColor="Black" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"/>
+                <RadioButton x:Name="RBssd" Content="SSD" TextColor="Black" Grid.Row="1" Grid.Column="0" CheckedChanged="RBssd_CheckedChanged"/>
+                <RadioButton x:Name="RBhhd" Content="HDD" TextColor="Black" Grid.Row="2" Grid.Column="0" CheckedChanged="RBssd_CheckedChanged"/>
+               
+            </Grid>
+
+            </StackLayout>
+
+             <Grid HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                   
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Monitor" TextColor="Black" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"/>
+                <RadioButton x:Name="RBPhl" Content="Philips" TextColor="Black" Grid.Row="1" Grid.Column="0"/>
+                <RadioButton x:Name="RBnec" Content="Nec" TextColor="Black" Grid.Row="2" Grid.Column="0"/>
+               <RadioButton x:Name="RBhp" Content="HP" TextColor="Black" Grid.Row="3" Grid.Column="0"/>
+               
+            </Grid>
+           
+
+        </StackLayout>
+            <ScrollView IsVisible="false">
+            <ListView x:Name="Usr_List_View" Margin="200,0,0,0" HorizontalOptions="Center">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Name}"/>
+                                <Label Text="___________" TextColor="Red"/>
+                                <Label Text="{Binding ID}"/>
+
+
+                            </StackLayout>
+
+                        </ViewCell>
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+
+            </ListView>
+
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,54 @@
+﻿<Properties StartupConfiguration="{43066D4D-51CF-453E-82A1-27004790E98A}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TabbedPages/Pages/MainPage.xaml.cs">
+    <Files>
+      <File FileName="TabbedPages/Pages/StorePage.xaml" Line="1" Column="1" />
+      <File FileName="TabbedPages/Pages/ShopPage.xaml" />
+      <File FileName="TabbedPages/Pages/PaymentPage.xaml" Line="1" Column="1" />
+      <File FileName="TabbedPages/Pages/PaymentPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="TabbedPages/Pages/ShopPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="TabbedPages/Pages/StorePage.xaml.cs" />
+      <File FileName="TabbedPages/AppShell.xaml" />
+      <File FileName="TabbedPages/App.xaml" />
+      <File FileName="TabbedPages/Pages/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="TabbedPages/Models/TotalInfo.cs" />
+      <File FileName="TabbedPages/Models/UserInfo.cs" />
+      <File FileName="TabbedPages/DataTranscations/DBTrans.cs" />
+      <File FileName="TabbedPages/MauiProgram.cs" />
+      <File FileName="TabbedPages/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="TabbedPages/Pages/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="TabbedPages/TabbedPages.csproj" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TabbedPages" expanded="True">
+            <Node name="TabbedPages" expanded="True">
+              <Node name="DataTranscations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="MainPage.xaml" expanded="True">
+                  <Node name="MainPage.xaml.cs" selected="True" />
+                </Node>
+                <Node name="PaymentPage.xaml" expanded="True" />
+                <Node name="ShopPage.xaml" expanded="True" />
+                <Node name="StorePage.xaml" expanded="True" />
+              </Node>
+              <Node name="Resources" expanded="True">
+                <Node name="Images" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TabbedPages PreferredExecutionTarget="Android.pixel_5_-_api_33_1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_33_1" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
